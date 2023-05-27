@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.teamname{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+
+.teamname span{
+    letter-spacing: 1.5;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6rem;
+}
+
+.timer{
+    text-align: center;
+}
+
+.timer span{
+
+    font-size: 5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.thirdraid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thirdraid .left span,.thirdraid .right span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    border: 5px solid black;
+}
+
+.active{
+    background-color: red !important;
+}
+
+.matchtime{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+}
+
+.matchtime .matchtimer{
+    display: flex;
+    font-size: 5rem;
+    color: red;
+    user-select: none;
+    cursor: pointer;
+}
+
+.matchtimer span{
+    color: black;
+}
+
+.functions button{
+    cursor: pointer;
+}
+
+.matchtimer{
+    position: relative;
+}
+
+#stopTimer,#startTimer{
+    font-size: 2rem;
+    color: black;
+    transition: .3s linear;
+}
+
+#stopTimer:hover,#startTimer:hover{
+    color: #209ce3;
+}
+
+.timerButtons{
+    padding: 1.5rem;
+}
+
+#raidTiming{
+    user-select: none;
+}
+
+.timerReset{
+    text-align: center;
+}
+
+.timerReset i{
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.timerReset i:hover{
+    color: #209ce3;
+}
+
+.scoreButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.scoreButtons .buttonContainer button{
+    padding: 2px 5px;
+    background-color: #209ce3;
+    color: white;
+    border: 1px solid black;
+    border-radius:5px ;
+    margin: 0 5px;
+    transition: .2s linear;
+    cursor: pointer;
+    user-select: none;
+}
+.scoreButtons .buttonContainer button:hover{
+    background-color: #135276;
+}
+
+.teamname span{
+    user-select: none;
+}
+
+#content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: red;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 7px 4px 18px black;
+    display: none;
+}

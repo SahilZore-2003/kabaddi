@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabaddi ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="teamname">
+            <span id="teamOneName">Kolkewadi</span>
+            <span id="teamTwoName">Chiplun</span>
+        </div>
+        <div class="score">
+            <span id="teamOneScore">0</span>
+            <span id="teamTwoScore">0</span>
+        </div>
+        <div class="scoreButtons">
+            <div class="buttonContainer">
+                <button onclick="decTeamOne()">-</button>
+                <button onclick="incTeamOne()">+</button>
+            </div>
+            <div class="buttonContainer">
+                <button onclick="decTeamTwo()">-</button>
+                <button onclick="incTeamTwo()">+</button>
+            </div>
+        </div>
+        <div class="timer">
+            <span id="raidTiming">30</span>
+        </div>
+        <div class="timerReset"><i class="uil uil-history-alt" id="timerReset"></i></div>
+        <div class="thirdraid">
+            <div class="left">
+                <span class="thirdcounter"></span>
+                <span class="thirdcounter"></span>
+                <span class="thirdcounter"></span>
+            </div>
+            <div class="right">
+                <span class="thirdcounter"></span>
+                <span class="thirdcounter"></span>
+                <span class="thirdcounter"></span>
+            </div>
+        </div>
+
+        <div class="matchtime">
+            <div class="matchtimer" id="time">
+                <div class="miniute">00</div>
+                <span>:</span>
+                <div class="second">00</div>
+
+            </div>
+            <div class="timerButtons">
+                <i class="uil uil-stop-circle" id="stopTimer"></i>
+                <i class="uil uil-play" id="startTimer"></i>
+            </div>
+
+            <div class="functions">
+                <button onclick="displaycontent('Super Raid')">super raid</button>
+                <button onclick="displaycontent('Super Tackle')">super tackle</button>
+                <button onclick="displaycontent('Half Time')">half time</button>
+            </div>
+        </div>
+
+
+        <div id="content">
+            Super Raid
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
